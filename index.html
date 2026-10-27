@@ -1,40 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Neymar26" />
-<link rel="manifest" href="/site.webmanifest" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura Semântica Do HTML</title>
-</head>
-<body bgcolor="#c1cdd4">
-    <header>
-    <h1>Estrutura Semântica Do HTML</h1>
-</header>
-<main>
-    <p>Este e um exemplo de Estrutura Semântica do HTML.</p>
-    <a href="./aula1/index.html"><button style="background-color:rgb(113, 127, 206); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">Aula 1 </button></a>
-    <a href="./aula2/index.html"><button style="background-color:rgb(32, 223, 48); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">Aula 2 </button></a>
-<a href="./aula3/index.html"><button style="background-color:rgb(233, 85, 146); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px"> aula3 </button></a>
-<a href="./aula4/index.html"><button style="background-color:rgb(133, 75, 60); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px;"> aula4 </button></a>
-<a href="./aula5/index.html"><button style="background-color:rgb(228, 46, 235); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">aula5 </button></a>
-<a href="./aula6/links.html"><button style="background-color:rgb(30, 33, 192); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">aula6 </button></a>
-<a href="./aula7/index.html"><button style="background-color:rgb(30, 33, 192); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">aula7 </button></a>
-<a href="./aula8/"><button style="background-color:rgb(209, 112, 56); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">aula8 </button></a>
-<a href="./aula9/classes.html"><button style="background-color:rgb(125, 25, 82); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">aula9 </button></a>
-<a href="./aula10/comportamento.html"><button style="background-color:rgb(131, 206, 223); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">aula10 </button></a>
-<a href="./aula11/reserva.html"><button style="background-color:rgb(201, 124, 149); width: 70px; height: 30px; color: #ffff; border:2px solid #000; border-radius:10px">aula11 </button></a>
 
-</main>
-</main>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura Semântica do HTML</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eaf0f5;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #273c75;
+            color: white;
+            padding: 30px;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #273c75;
+        }
+
+        .botoes {
+            margin: 25px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .aula1 { background-color: #5968c9; }
+        .aula2 { background-color: #16a34a; }
+        .aula3 { background-color: #e84393; }
+        .aula4 { background-color: #8b5e4b; }
+        .aula5 { background-color: #c026d3; }
+        .aula6 { background-color: #4338ca; }
+        .aula7 { background-color: #3730a3; }
+        .aula8 { background-color: #e67e22; }
+        .aula9 { background-color: #9d174d; }
+        .aula10 { background-color: #0891b2; }
+        .aula11 { background-color: #be5675; }
+
+        footer {
+            background-color: #273c75;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Estrutura Semântica do HTML</h1>
+        <p>Este é um exemplo de estrutura semântica do HTML.</p>
+    </header>
+
+    <main>
+        <h2>Minhas aulas</h2>
+        <p>Escolha uma aula para acessar.</p>
+
+        <div class="botoes">
+            <a class="aula1" href="aula1.html">Aula 1</a>
+            <a class="aula2" href="aula2.html">Aula 2</a>
+            <a class="aula3" href="/aula3/index.html">Aula 3</a>
+            <a class="aula4" href="/aula4/index.html">Aula 4</a>
+            <a class="aula5" href="/aula5/index.html">Aula 5</a>
+            <a class="aula6" href="/aula6/index.html">Aula 6</a>
+            <a class="aula7" href="/aula7/index.html">Aula 7</a>
+            <a class="aula8" href="/aula8/index.html">Aula 8</a>
+            <a class="aula9" href="/aula9/index.html">Aula 9</a>
+            <a class="aula10" href="/aula10/comportamento.html">Aula 10</a>
+            <a class="aula11" href="/aula11/obrigado.html">Aula 11</a>
+            <a class="quiz" href="/quiz/index.html">Quiz</a>
+        </div>
+    </main>
+
     <footer>
-        <p>&copy; 2026 TDS1. Julio cesar Quintanilha delfim da costa</p>
-        <p> Todos os direitos reservados.  </p>
-        
+        <p>© 2026 TDS1 - Julio Cesar Quintanilha Delfim da Costa</p>
+        <p>Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
